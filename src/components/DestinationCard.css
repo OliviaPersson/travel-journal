@@ -1,6 +1,13 @@
+hr {
+    margin: 0px;
+    border: 1px solid #F5F5F5;
+}
+
 .destination-container {
     display: flex;
     gap: 19px;
+    margin-bottom: 18px;
+    margin-top: 18px;
 }
 
 .destination-image {

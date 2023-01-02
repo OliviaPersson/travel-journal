@@ -10,16 +10,7 @@ const TravelDestinations = () => {
     <section className="travel-container">
       {traveldata.map((destination) => {
         return (
-          <DestinationCard
-            key={destination.id}
-            title={destination.title}
-            description={destination.description}
-            endDate={destination.endDate}
-            startDate={destination.startDate}
-            googleMapsUrl={destination.googleMapsUrl}
-            location={destination.location}
-            imageUrl={destination.imageUrl}
-          />
+          <DestinationCard key={destination.id} destination={destination} />
         );
       })}
     </section>

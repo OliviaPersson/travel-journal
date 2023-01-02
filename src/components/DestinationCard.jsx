@@ -1,15 +1,17 @@
 import locationSymbol from "../images/location-symbol.png";
 import "./DestinationCard.css";
 
-const DestinationCard = ({
-  title,
-  description,
-  endDate,
-  startDate,
-  googleMapsUrl,
-  location,
-  imageUrl,
-}) => {
+const DestinationCard = ({ destination }) => {
+  const {
+    title,
+    description,
+    endDate,
+    startDate,
+    googleMapsUrl,
+    location,
+    imageUrl,
+  } = destination;
+
   return (
     <div className="destination-container">
       <img className="destination-image" src={imageUrl} />
